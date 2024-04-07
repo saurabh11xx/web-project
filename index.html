@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 31);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 60);
+      }
+      nav ul {
+        display: flex;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: wheat;
+      }
+      nav ul li a:hover {
+        color: rgb(130, 130, 234);
+        font-size: 1.1rem;
+      }
+      main hr {
+        border: 0;
+        background-color: rgb(112, 145, 184);
+        height: 3.2px;
+        margin: 33px 74px;
+      }
+      .left {
+        font-size: 1.8rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 120px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 2.4rem;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(170, 102, 235);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(170, 102, 235);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 95vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background-color: white;
+        width: 76vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 112px;
+      }
+      .image-top {
+        width: 34px;
+        position: relative;
+        top: -40px;
+        left: -13px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 216px;
+        font-size: 11px;
+      }
+      footer {
+        background-color: #0e0e1a;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights{
+        align-items: center;
+        margin-left: 600px;
+        color: gray;
+        padding: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Saurabh's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Saurabh</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="PngItem_5311989.png" alt="png" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <h1>Skills</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="html-5.png" alt="" />
+            <div class="vertical-title">
+              HTML (Hyper Text Markaup language)
+            </div>
+            <div class="vertical-desc">
+              HTML is the standard markup language for creating web pages and
+              web applications. It provides the structure for content on the
+              internet, using tags to define elements such as headings,
+              paragraphs, links, and images.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="css-3.png" alt="" />
+            <div class="vertical-title">
+              CSS (Cascading Style Sheets)
+            </div>
+            <div class="vertical-desc">
+              CSS is a style sheet language used to define the presentation of
+              HTML and XML documents. It controls the layout, colors, fonts, and
+              other visual aspects of a web page, allowing for customization and
+              consistency across multiple pages.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="js.png" alt="" />
+            <div class="vertical-title">
+              JavaScript
+            </div>
+            <div class="vertical-desc">
+              JavaScript is a versatile scripting language primarily used for
+              adding interactivity and dynamic behavior to web pages. It enables
+              developers to create interactive elements, validate forms,
+              manipulate data, and build web applications with features like
+              animations and AJAX requests.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="letter-c.png" alt="" />
+            <div class="vertical-title">
+              C Language
+            </div>
+            <div class="vertical-desc">
+              C is a general-purpose programming language known for its
+              efficiency, flexibility, and low-level system access. It is widely
+              used for developing system software, operating systems, embedded
+              systems, and applications where performance is critical.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="c-.png" alt="" />
+            <div class="vertical-title">
+              C++ Language
+            </div>
+            <div class="vertical-desc">
+              C++ is an extension of the C programming language with additional
+              features such as object-oriented programming (OOP) capabilities.
+              It is often used for developing high-performance applications,
+              games, system software, and resource-constrained environments,
+              leveraging its powerful features like classes, inheritance, and
+              polymorphism.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Saurabh's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><b>Educution:</b></li>
+            <li>B.C.A(Bachelor of Computer Application)</li>
+            <li>Greater Noida Institute of technology</li>
+            <li>GPA:UG second year</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li><b>Contact Information:</b></li>
+            <li>Email:saurabhxxx6@gmail.com</li>
+            <li>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/saurabh-singh-945a31294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                >Your LinkedIn Profile</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+       www.saurabhportfolio.com || All rights reserverd  &copy; 2024
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Software Developer", "Video Editor"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
